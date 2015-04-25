@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+  
+<html>
+<head>
+    <title>Exam2Final - J.Reid</title>
+    
+    <link rel="stylesheet" type="text/css" href="styles/Exam2final.css" />
+    <script type="text/javascript" src="js/Exam2final.js"></script>
+    <script type="text/javascript" src="js/Exam2finallac.js"></script>
+    <script type="text/javascript" src="js/Exam2finalcc.js"></script>
+    <script type="text/javascript" src="js/Exam2finalcdu.js"></script>
+    <script type="text/javascript" src="js/Exam2finaldc.js"></script>
+    <script type="text/javascript" src="js/Exam2finalpu.js"></script>
+    
+     <style>
+table, th, td {
+    border: 5px solid black; position: inherit; table-layout: fixed;
+}
+</style>
+
+      
+    
+    </head>
+<body>
+   
+    <section id ="dropdown">
+        <header>
+            <h1>Exam2Final - J.Reid</h1>
+        </header>
+       <hr>
+        <hr>
+            <header>
+                    Menu Choice Services
+                </header>
+        <select onchange ="MenuChoice()" id="menu" >
+            <option>Please Select An Option</option>
+            <option>All Categories</option>
+            <option>Create Category</option>
+            <option>Update Category</option>
+            <option>Delete Category</option>
+            <option>About Me</option>
+        </select>
+    </section>
+   <hr>
+    
+    
+    <section id="showarea1" class="showarea1" >
+        <h2>All Categories: </h2>
+        <hr>
+            <button onclick="GetAllCategories()" id="cates">Get All</button>
+            <hr>
+                <br>
+                    <label id="dac">The operations will display here:</label>
+    </section>
+    <hr>
+        
+        
+        <section id="showarea2" class="showarea2">
+            <h2>Create Category: </h2>
+                    <label class="cn">Category Name: </label>
+                    <input type="text" id="creacat">
+                        <hr>
+                            <br>
+                                <label class="cd">Category Description: </label>
+                                <input type="text" id ="catdes">
+                                    <br>
+                                    <hr><button onclick="CreateCategory()" id="ceaca">CreateCategory</button>
+                                <hr>
+                                    <label id="thor">The operation's result will display here.</label>
+                                        </section>
+        
+        <section id="showarea3" class="showarea3">
+            <header>
+                <h2>Category Description Update</h2>
+            </header>
+            <br>
+                <label class="punca">Category ID: </label>
+                <input type="text" id= "pooch">
+            
+           <label class="upcat">Category Description </label>
+           <input type="text" id="colew">
+            <hr>
+            <br>
+                <hr><button onclick="ChangeDescriptionUpdate()" id="chadio">Change Description</button>
+                <hr>
+                    <label id="chap">The operation's result will display here.</label>
+        </section>
+        
+    <section id="showarea4" class="showarea4">
+        <header>
+            <h2>DeleteCategory</h2>
+        </header>
+        <hr>
+            <label> Please enter category id: </label>
+            <input type="text" id="tracker">
+                <br>
+                    <br>
+                    <button onclick="DeleteCategoryID()" id="gettem">DeleteCategory</button>
+                    <hr>
+        <label id="flips">The operation result will display here</label>
+        <br>
+            <hr>
+                <br>
+         <p>Please retype the Category ID. and then press the confirm button,
+        the confirmation for deletion will be displayed in a pop-up. After confirming the deletion,
+        please close</p>
+        <form name="form1" method="get" action="">
+        <p>CategoryID: <input type="text" name="categoryid" size= "30" />
+        <input type="button" value= "Confirm"
+                    onclick="display1();" /></p>
+        </form>
+    </section>
+    <hr>
+            <br>
+     <section id="showarea5" class="showarea5">
+        <h2>AboutMe: </h2>
+        <p>John D Reid</p>
+        <p>Blazer ID: jreid009</p>
+            <br>
+        <p>Press the Curious button,
+        to view extended information in a pop-up. After viewing the information,
+        please close</p>
+            <form name="form2" method="get" action="">
+        <p><input type="button" value= "Curious?"
+                    onclick="display2();" /></p>
+        </form>
+        <br>
+            <br>
+     </section>
+    <br>
+        <br>
+            <br>
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+    
+    <p><footer><p>J.Reid c/o jreid009@uab.edu &copy; 2015</p></footer></p>    
+            
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
